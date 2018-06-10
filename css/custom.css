@@ -1,0 +1,16 @@
+section:first-child {
+    display: none;
+}
+
+.subtitle+.title {
+    margin-top: -10px;
+}
+
+.button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button[disabled], .button.is-disabled {
+    display: none;
+}
