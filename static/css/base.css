@@ -1,0 +1,410 @@
+/**
+ *  Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ *  http://cssreset.com
+ *
+ **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 
+ * Global 
+ */
+body {
+    padding:15px 15px 30px;
+}
+
+body, input, textarea, a {
+    font-size:16px;
+    font-family:'Hevetica', 'Open Sans', 'NanumBarunGothic', 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif;
+    font-weight:300;
+    color:#000;
+}
+
+a, a:hover {
+    text-decoration:none;
+    border-bottom:1px dashed #000;
+}
+
+/**
+ * Header
+ */
+header {
+    padding-bottom:30px;
+}
+
+header h1 a, header h1 a:hover {
+    font-size:40px;
+    letter-spacing:-2px;
+    border-bottom:0;
+}
+
+/**
+ * Aside
+ */
+aside {
+    position:absolute;
+}
+
+aside li {
+    margin-bottom:8px;
+}
+
+aside li a {
+    font-size:25px;
+    letter-spacing:-1px;
+    border-bottom:0;
+}
+
+/** 
+ * Wrapper
+ */
+
+.wrapper {
+    padding:0 15px;
+    max-width:740px;
+}
+
+.wrapper main {
+}
+
+/**
+ * Footer
+ */
+
+footer {
+    font-size:14px;
+    padding-top:30px;
+}
+
+/**
+ * Common
+ */
+h2 {
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+h2:before, .blog-page main h1:before, .blog-page main h3:before {
+    content:'-';
+    margin-left:-14px;
+    margin-right:5px;
+}
+
+section {
+    margin-bottom:60px;
+}
+
+section dd, section dd a, section li {
+    font-size:14px;
+}
+
+section p, section li {
+    line-height:2;
+}
+
+/** 
+ * Main Page
+ */
+.main-page aside {
+    position:relative;
+}
+
+.main-page .wrapper {
+    padding-left:0;
+}
+
+.main-page footer {
+    padding-top:10px;
+}
+
+/**
+ * About Page
+ */
+
+.about-page section dl {
+    margin-bottom:40px;
+}
+
+.about-page section dt {
+    margin-bottom:10px;
+}
+
+/**
+ * Contact Page
+ */
+.contact-page section p {
+    margin-bottom:10px;
+}
+
+
+/**
+ * Archive Page
+ */
+
+.archive-page footer {
+    clear:both;
+}
+
+.archive-page section {
+    float:left;
+    width:45%;
+}
+
+.archive-page section:first-child {
+    margin-right:5%;
+}
+
+.archive-page section dl {
+    margin-bottom:30px;
+}
+
+.archive-page section dt {
+    margin-bottom:10px;
+}
+
+
+.error {
+    margin-top:45px;
+}
+
+.error:before {
+    display:none;
+}
+
+.blog-page main h1 {
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.blog-page main h1 a {
+    font-size:25px;
+}
+
+.blog-page main time a {
+    font-size:14px;
+}
+
+.blog-page main article {
+    margin-top:80px;
+    word-wrap:break-word;
+}
+
+.blog-page main article:first-child {
+    margin-top:0;
+}
+
+.blog-page main .content p, .blog-page main .content ol, .blog-page main .content ul {
+    margin-bottom:30px;
+}
+
+.blog-page main .content p, .blog-page main .content li, .blog-page main .content a {
+    font-size:14px;
+    line-height:1.8;
+}
+
+.blog-page main .content h2, .blog-page main .content h3 {
+    font-weight:300;
+    margin-bottom:15px;
+}
+
+.blog-page main pre {
+    margin-bottom:30px;
+}
+
+.blog-page main pre > code {
+        padding:0;
+}
+
+.blog-page main pre, .blog-page main code {
+    background:#000;
+    padding:10px;
+    line-height:1.8;
+    display:inline-block;
+
+    *display:inline;
+    *zoom:1;
+}
+
+
+.blog-page main img {
+    max-width:100%;
+}
+
+.blog-page main pre, .blog-page main pre a, .blog-page main code, .blog-page main code a {
+    color:#FFF;
+    font-size:13px;
+}
+
+.blog-page main pre a, .blog-page main code a {
+    border-bottom-color:#FFF;
+}
+
+.blog-page .pagination {
+    padding-top:40px;
+    *zoom:1;
+}
+
+.blog-page .pagination:after {
+    content:'';
+    clear:both;
+    display:block;
+}
+
+.blog-page .pagination a {
+    border-bottom:0;
+}
+
+.blog-page .pagination a:hover {
+    border-bottom:1px dashed #000;
+}
+
+.blog-page .pagination .back {
+    float:left;
+}
+
+.blog-page .pagination .forward {
+    float:right;
+}
+
+.blog-page main strong {
+    font-weight:400;
+}
+
+.blog-page ol {
+    list-style-type:decimal;
+    list-style-position:inside;
+}
+
+.blog-page hr {
+    border:0;
+    border-top:1px solid #000;
+}
+
+.blog-page .footnotes {
+    border-top:1px solid #CCC;
+    padding:10px 10px 0;
+}
+
+.blog-page .footnotes hr {
+    display:none;
+}
+
+.blog-page .content .footnotes p {
+    margin-bottom:10px;
+    font-size:13px;
+}
+
+.blog-page .content sup a {
+    font-size: 11px;
+    vertical-align: top;
+    top: -0.5em;
+    position: relative;
+    text-decoration: none;
+    margin:0 3px;
+}
+
+.blog-page ol.notes {
+    padding: 0px;
+    margin: 12px 0px 0;
+    list-style-type: none;
+    border-top:1px solid #CCC;
+}
+
+.blog-page ol.notes, .blog-page ol.notes a {
+    font-size:13px;
+}
+
+.blog-page ol.notes li.note {
+    padding: 12px 10px 0;
+}
+
+.blog-page ol.notes li.note img.avatar {
+    vertical-align:middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.blog-page ol.notes li.note blockquote {
+    padding: 4px 10px;
+    margin: 10px 0px 0px 25px;
+}
+
+.blog-page ol.notes li.note a.avatar_frame {
+    border-bottom:0;
+}
+
+.blog-page .like_and_reblog {
+    text-align:right;
+    list-style: none;
+}
+
+.blog-page .like_and_reblog li {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    
+    margin: 0;
+    padding: 7px 0 7px 15px;
+    height: 20px;
+}
+
+.blog-page .like_and_reblog a {
+    border-bottom:0;
+}
+
+.blog-page blockquote {
+    border-left: 1px solid #CCC;
+    font-size: 13px;
+    padding-left: 20px;
+    line-height: 2;
+    margin-bottom:20px;
+}

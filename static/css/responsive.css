@@ -1,0 +1,35 @@
+/* tablet */
+@media all and (max-width: 1024px) {
+    .archive-page section {
+        float:none;
+        width:100%;
+        margin-right:0;
+    }
+}
+
+/* mobile phone */
+@media all and (max-width: 768px) {
+    aside {
+        position:relative;
+        border-bottom:1px solid #000;
+        padding-bottom:25px;
+        margin-bottom:25px;
+    }
+
+    aside li a:hover {
+        border-bottom:0;
+    }
+
+    .wrapper {
+        padding-left:15px;
+        padding-right:15px;
+    }
+        
+
+    .main-page aside {
+        border-bottom:0;
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+}
+
